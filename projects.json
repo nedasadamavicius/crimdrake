@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Songify Remake - Django & Spotify API",
+        "description": "This project is my own version (a remake) of a web application project I worked on at Fontys.\nIt lives on AWS and is implemented using Django, it also makes use of Spotify API to fetch categories and statistics with most popular songs of chosen artists.",
+        "link": "https://webapp.crimdrake.com",
+        "image": "sonfigy-spotify.png"
+    },
+    {
+        "title": "Web Dashboard - ASML",
+        "description": "TODO",
+        "link": "#",
+        "image": ""
+    },
+    {
+        "title": "Mobile App - DP",
+        "description": "TODO",
+        "link": "#",
+        "image": ""
+    },
+    {
+        "title": "API - DP",
+        "description": "TODO",
+        "link": "#",
+        "image": ""
+    }
+]
