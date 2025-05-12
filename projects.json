@@ -6,10 +6,10 @@
         "image": "sonfigy-spotify.png"
     },
     {
-        "title": "Web Dashboard - ASML",
-        "description": "TODO",
-        "link": "#",
-        "image": ""
+        "title": "Web Dashboard - ASML (and DP)",
+        "description": "While the title mentions relation to ASML, I have created a dashboard with the same site layout & tools I've used at ASML, but with my own idea.\nOf course, the ASML dashboard solution had more features and personalized look.\n\nCurrent version of this dashboard is just a concept - it is being worked on!",
+        "link": "https://dashboard.crimdrake.com",
+        "image": "training-dashboard.png"
     },
     {
         "title": "Mobile App - DP",
