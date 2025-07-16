@@ -6,148 +6,6 @@
     <link rel="icon" type="image/png" href="crimdrake_logo.png">
     <title>Crimdrake - Projects</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-columns: 1fr;
-            min-height: 100vh;
-        }
-
-        header {
-            display: none;
-        }
-
-        nav {
-            grid-row: 1;
-            grid-column: 1;
-            background-color: rgb(9, 0, 0);
-            color: rgb(217, 217, 217);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: rgb(217, 217, 217);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Background container */
-        main {
-            position: relative;
-            grid-row: 2;
-            grid-column: 1;
-            background-image: url('35b2006f-48a4-4801-bdd2-19b76c5085cc.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        /* Dark overlay covering full main */
-        .overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        /* Project container covering 90% of main */
-        .project-container {
-            position: relative;
-            width: 90%;
-            height: 90%;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            padding: 20px;
-            gap: 20px;
-            color: white;
-        }
-
-        .project-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            overflow-y: auto;
-            padding-right: 10px;
-            max-height: 100%;
-        }
-
-        .project-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .project-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .project-details {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        #project-link {
-            font-size: 18px;
-            font-weight: bold;
-            color: cyan;
-            text-decoration: none;
-        }
-
-        #project-link:hover {
-            text-decoration: underline;
-        }
-
-        #project-image {
-            width: 100%;
-            max-height: auto; /* Maintain aspect ratio */
-            object-fit: contain;
-            border-radius: 5px;
-            display: none;
-        }
-
-        .project-details h2 {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            grid-row: 3;
-            grid-column: 1;
-            background-color: rgb(9, 0, 0);
-            color: rgb(217, 217, 217);
-            text-align: center;
-            padding: 10px;
-        }
-    </style> -->
 </head>
 <body>
     <header></header>
@@ -225,19 +83,24 @@
             const errorText = document.getElementById('image-error'); // Error message placeholder
 
             if (project.image && project.image.trim() !== "") {
-                imageElement.src = project.image;
-                imageElement.style.display = 'block';
-                errorText.style.display = 'none'; // Hide error text if image loads successfully
+                imageElement.style.display = 'none'; // Hide by default until load success
+                errorText.style.display = 'none'; // Hide error by default
 
-                // Handle missing or broken images
+                imageElement.onload = function() {
+                    imageElement.style.display = 'block'; // Show only if it loads
+                    errorText.style.display = 'none';
+                };
+
                 imageElement.onerror = function() {
                     console.warn("Image not found:", project.image);
-                    imageElement.style.display = 'none'; // Hide broken image
-                    errorText.style.display = 'block'; // Show error text
+                    imageElement.style.display = 'none'; // Make sure it's hidden
+                    errorText.style.display = 'block';
                 };
+
+                imageElement.src = project.image; // Trigger load
             } else {
-                imageElement.style.display = 'none'; // Hide image completely
-                errorText.style.display = 'none'; // Don't show error for empty/null images
+                imageElement.style.display = 'none';
+                errorText.style.display = 'none';
             }
         }
     </script>
@@ -261,9 +124,11 @@
             details.classList.add("project-details");
     
             details.innerHTML = `
-              <p>${project.description.replace(/\n/g, "<br>")}</p>
-              ${project.link ? `<a id="project-link" href="${project.link}" target="_blank">Visit ${project.title}</a>` : ""}
-              ${project.image ? `<img src="${project.image}" alt="Project Image">` : ""}
+                <p>${project.description.replace(/\n/g, "<br>")}</p>
+                ${project.link && project.link.trim() !== "" && project.link !== "#" 
+                    ? `<a id="project-link" href="${project.link}" target="_blank">Visit ${project.title}</a>` 
+                    : ""}
+                ${project.image ? `<img src="${project.image}" alt="Project Image">` : ""}
             `;
     
             item.addEventListener("click", () => {

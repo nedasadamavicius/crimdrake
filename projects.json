@@ -1,25 +1,25 @@
 [
     {
-        "title": "Songify Remake - Django & Spotify API",
-        "description": "This project is my own version (a remake) of a web application project I worked on at Fontys.\n\nIt lives on AWS and is implemented using Django, it also makes use of Spotify API to fetch categories and statistics with most popular songs of chosen artists.",
+        "title": "Songify - Django & Spotify API",
+        "description": "A refactor of the project I've worked on during first year of my studies.\n\nI used it as a way to play around with Django. It makes use of the Spotify API to fetch categories and statistics with most popular songs of chosen artists.\n\nFor practice reasons, future extensions will include:\n- User authentication using Spotify\n- User song recommendations based on listening history\n\nThis project is a work in progress, so expect more updates in the future.",
         "link": "https://webapp.crimdrake.com",
         "image": "sonfigy-spotify.png"
     },
     {
         "title": "Web Dashboard - DP",
-        "description": "A dashboard with a very similar site layout & tools I've used at ASML, but with my own idea.\n\nOf course, the ASML web-dashboard solution was way more rich in features & personalization.\n\nCurrent version of this dashboard is just a concept with fake data.",
+        "description": "A dashboard with a very similar site layout & tools I've used at ASML, but with my own idea.\n\nOf course, the ASML web-dashboard solution was way more rich in features & personalization.\n\nThe idea behind such dashboard is to enable overview of historical training data, as well as growth metrics over extended period of time, which aids in making long-term training based decisions.\n\nCurrent version of this dashboard is just a concept with fake data.",
         "link": "https://dashboard.crimdrake.com",
         "image": "training-dashboard.png"
     },
     {
         "title": "Mobile App - DP",
-        "description": "A mobile interface used for:\n- Fetching workout plan.\n- Loading exercises per session.\n- Taking in session data, and updating database records.\n\nCurrently it is still an idea, eventually will be realized and shared here.",
+        "description": "A mobile interface used for:\n- Fetching list of workout plans\n- Loading exercises per workout\n- Taking in workout session data and updating database records\n\nConceptually this mobile 'app' should not go beyond loading workout sessions and taking in session data - so it can be later used to make long-term decisions\n\nCurrently it is still an idea, eventually will be realized and shared here",
         "link": "#",
         "image": ""
     },
     {
         "title": "API - DP",
-        "description": "Also part of the 'DP' project, this API will be used to serve formatted data to the dashboard, and serve/save workout data - which will be collected from a mobile interface.\n\nAs with Mobile App - DP, this is still an idea.",
+        "description": "API that will be used to serve formatted data to the dashboard and handle workout data - which will be collected from a mobile interface.\n\nAs with 'Mobile App - DP', this is still an idea and will be worked on in parallel with other compoenents of the DP project.",
         "link": "#",
         "image": ""
     }
