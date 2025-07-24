@@ -1,7 +1,7 @@
 [
     {
         "title": "Songify - Django & Spotify API",
-        "description": "A refactor of the project I've worked on during first year of my studies.\n\nI used it as a way to play around with Django. It makes use of the Spotify API to fetch categories and statistics with most popular songs of chosen artists.\n\nFor practice reasons, future extensions will include:\n- User authentication using Spotify\n- User song recommendations based on listening history\n\nThis project is a work in progress, so expect more updates in the future.",
+        "description": "A refactor of the project I worked on during the first year of my studies.\n\nI used it as a way to play around with Django. It uses the Spotify API to fetch categories and statistics with the most popular songs of chosen artists.\n\nSince then, I’ve extended it with:\n- User authentication using Spotify\n- Song recommendations based on user listening history\n- Redis for caching to improve user experience\n- Dockerized setup with separate production and development environments\n- Celery integration (now deprecated) for background task automation\n\nThe project is complete for now, but may receive updates in the future.",
         "link": "https://webapp.crimdrake.com",
         "image": "sonfigy-spotify.png"
     },
