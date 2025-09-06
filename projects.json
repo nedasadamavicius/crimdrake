@@ -1,26 +1,14 @@
 [
     {
         "title": "Songify - Django & Spotify API",
-        "description": "A refactor of the project I worked on during the first year of my studies.\n\nI used it as a way to play around with Django. It uses the Spotify API to fetch categories and statistics with the most popular songs of chosen artists.\n\nSince then, I’ve extended it with:\n- User authentication using Spotify\n- Song recommendations based on user listening history\n- Redis for caching to improve user experience\n- Dockerized setup with separate production and development environments\n- Celery integration (now deprecated) for background task automation\n\nThe project is complete for now, but may receive updates in the future.",
+        "description": "A refactor of the project I worked on during the first year of my studies.\n\nI used it as a way to play around with Django. It uses the Spotify API to fetch categories and statistics with the most popular songs of chosen artists.\n\nSince then, I’ve extended it with:\n- User authentication using Spotify\n- Song recommendations based on user listening history\n- Redis for caching to improve user experience\n- Dockerized setup with separate production and development environments\n- GitHub Actions for automatic deployment\n- Celery for background task automation\n\nThe project is complete for now, but may receive updates in the future.",
         "link": "https://webapp.crimdrake.com",
         "image": "sonfigy-spotify.png"
     },
     {
-        "title": "Web Dashboard - DP",
-        "description": "A dashboard with a very similar site layout & tools I've used at ASML, but with my own idea.\n\nOf course, the ASML web-dashboard solution was way more rich in features & personalization.\n\nThe idea behind such dashboard is to enable overview of historical training data, as well as growth metrics over extended period of time, which aids in making long-term training based decisions.\n\nCurrent version of this dashboard is just a concept with fake data.",
-        "link": "https://dashboard.crimdrake.com",
-        "image": "training-dashboard.png"
-    },
-    {
-        "title": "Mobile App - DP",
-        "description": "A mobile interface used for:\n- Fetching list of workout plans\n- Loading exercises per workout\n- Taking in workout session data and updating database records\n\nConceptually this mobile 'app' should not go beyond loading workout sessions and taking in session data - so it can be later used to make long-term decisions\n\nCurrently it is still an idea, eventually will be realized and shared here",
+        "title": "DP Local - Mobile App",
+        "description": "DP stands for Dynamic Program, basically a flexible workout logger, or else a mobile app I am creating to log my workouts.\n\nIt will be completely offline and allow to store workout plans, workouts per plan, exercises per workout and sets per exercise.\n\nUpon my decision, first MVP will be shared here and possibly released publicly for free use on Android.",
         "link": "#",
-        "image": ""
-    },
-    {
-        "title": "API - DP",
-        "description": "API that will be used to serve formatted data to the dashboard and handle workout data - which will be collected from a mobile interface.\n\nAs with 'Mobile App - DP', this is still an idea and will be worked on in parallel with other compoenents of the DP project.",
-        "link": "#",
-        "image": ""
+        "image": "uisketch.png"
     }
 ]
