@@ -1,6 +1,6 @@
 [
     {
-        "title": "Songify - Django & Spotify API",
+        "title": "Spotify Explorer - Django Web App",
         "description": "A refactor of the project I worked on during the first year of my studies.\n\nI used it as a way to play around with Django. It uses the Spotify API to fetch categories and statistics with the most popular songs of chosen artists.\n\nSince then, I’ve extended it with:\n- User authentication using Spotify\n- Song recommendations based on user listening history\n- Redis for caching to improve user experience\n- Dockerized setup with separate production and development environments\n- GitHub Actions for automatic deployment\n- Celery for background task automation\n\nThe project is complete for now, but may receive updates in the future.",
         "link": "https://webapp.crimdrake.com",
         "image": "sonfigy-spotify.png"
