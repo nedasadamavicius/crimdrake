@@ -1,14 +1,14 @@
 [
     {
+        "title": "Dynamic Program - React Native Mobile App",
+        "description": "A <b>Dynamic Program</b> born out of my own frustration with cluttered notes apps, bloated Excel sheets, and subscription/Ad -based workout trackers. I wanted <b>a simple, long-term way to log and manage my training on my own terms</b>. This personal project focuses on building <b>an offline-first mobile app</b> - designed to work without relying on the internet, profiles, ads, or cloud dependencies - to make regular programming chores like session logging, workout tracking, and deload management effortless.\n\n<i>Currently the term 'Dynamic' is loosely defined.</i>\n<i>Specific aspects will grow later, focusing on how adaptive and insightful the result tracking experience becomes.</i>\n\nRight now, the app allows users to:\n• Manage workout plans & log results\n• Manage a personal exercise library\n• Track personal records (1RMs)\n• Define fixed deload cadences\n• Get auto-calculated exercise weights based on 1RMs\n• Use temporary deload sessions with adjusted weights\n\nNext steps:\n• Add week-based workout tracking\n• Package and publish to the Play Store for open community use.",
+        "link": "https://dynamicprogram.app",
+        "image": "verysimpleappdisplay.png"
+    },
+    {
         "title": "Spotify Explorer - Django Web App",
         "description": "A remake of the project I worked on during the first year of my studies.\n\nI used it as a way to play around with Django. It uses the Spotify API to fetch categories and statistics with the most popular songs of chosen artists.\n\nSince then, I’ve extended it with:\n• User authentication using Spotify\n• Song recommendations based on user listening history\n• Redis for caching to improve user experience\n• Dockerized setup with separate production and development environments\n• GitHub Actions for automatic deployment\n• Celery for background task automation\n\n<b>NOTE:</b> The app runs on very volatile network (out of my control scope), so the server may not be reachable at times.",
         "link": "https://webapp.crimdrake.com",
         "image": "sonfigy-spotify.png"
-    },
-    {
-    "title": "Dynamic Program - React Native Mobile App",
-    "description": "A <b>Dynamic Program</b> born out of my own frustration with cluttered notes apps, bloated Excel sheets, and subscription/Ad -based workout trackers. I wanted <b>a simple, long-term way to log and manage my training on my own terms</b>. This personal project focuses on building <b>an offline-first mobile app</b> - designed to work without relying on the internet, profiles, ads, or cloud dependencies - to make regular programming chores like session logging, workout tracking, and deload management effortless.\n\n<i>Currently the term 'Dynamic' is loosely defined.</i>\n<i>Specific aspects will grow later, focusing on how adaptive and insightful the result tracking experience becomes.</i>\n\nRight now, the app allows users to:\n• Manage workout plans & log results\n• Manage a personal exercise library\n• Track personal records (1RMs)\n• Define fixed deload cadences\n• Get auto-calculated exercise weights based on 1RMs\n• Use temporary deload sessions with adjusted weights\n\nNext steps:\n• Add week-based workout tracking\n• Package and publish to the Play Store for open community use.",
-    "link": "https://dynamicprogram.app",
-    "image": "verysimpleappdisplay.png"
     }
 ]
